@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Infografia eHautoation</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'-->
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style type="text/css">
+      body{
+         /* font-family: 'Questrial', sans-serif; */
+         font-family: 'Lato', sans-serif;
+      }
+</style>
+</head>
+<body>
+<section id="contenedor">
+<p id="farengais">&deg;F</p>
+<!-- div id="rec">
+      <img src="img/rec.png">
+</div -->
+<div id="sala">
+      <img class="img-sala" id="isala" src="img/sala.jpg">
+	<img class="img-sala" id="iestar" src="img/salaestar.jpg">
+	<img class="img-sala" id="icocina" src="img/cocina.jpg">
+	<img class="img-sala" id="iporshe" src="img/porshe.jpg">
+      <div id="signal">
+       <iframe src="http://tv.giphy.com/matrix" width="178" height="103" border="0">
+       </iframe>     
+      </div>
+</div>
+</section>
+<div id="manu">
+      <div id="control">
+            <div id="logo">
+                  <img src="img/lg.png" width="30px">
+            </div>
+            <form oninput="resultado.value=parseInt(t.value);
+                           resultadoluz.value=parseInt(apaluz.value);">      
+            <label>Iluminación</label>
+            <div class="label">
+                  <span id="offtv" class="apagar"></span>
+                  <input id="apaluz" type ="range" min ="0" max="1" step ="0.1" />
+                  <span id="ontv" class="encender"></span>
+                  <output name="resultadoluz" for="apa-luz" id="text-apa">0</output>
+            </div>
+            <div id="lbltempera">
+            <label>Temperatura</label>
+            <div class="label">
+               <span id="offtemp" class="apagar"></span>
+                  <input name="t" id="temp" type ="range" min ="60" max="90" step ="1" value="70" />
+                  <span id="ontemp" class="encender"></span>
+                  <div id="temperatura">
+                        <output name="resultado" id="temperatura-a">0</output>
+                  </div>
+            </div>
+            </div>
+            </form>
+            <div id="lblcamaras">
+            <div id="camaras"></div><label>Cámaras</label>
+            <div class="label">
+                  <div class="bolas">
+                        <div id="habitacion">
+                              <label>Habitación</label>
+                        </div>
+                  </div>
+                  <div class="bolas">
+                        <div id="cocina">
+                              <label>Cocina</label>
+                        </div>
+                  </div>
+                  <div class="bolas">
+                        <div id="salaestar">
+                              <label>Sala</label>
+                        </div>
+                  </div>
+                  <div class="bolas">
+                        <div id="porshe">
+                              <label>Porshe</label>
+                        </div>
+                  </div>
+            </div>
+            </div>
+            <div id="tv">
+            <div class="label">
+                  <div id="encender-tv">
+                        <span id="ontv" class="encender"></span>
+                  </div>
+                  <label>TV</label>
+                  <div id="apagar-tv">
+                        <span id="offtv" class="apagar"></span>
+                  </div>
+            </div>
+            </div>
+      </div>
+      <img id="celular" src="img/celular.png">
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
